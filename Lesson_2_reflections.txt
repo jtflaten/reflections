@@ -2,3 +2,28 @@ What happens when you initialize a repository? Why do you need to do it?
 
 When you initialize a repository, git create a .git folder to store commits in.
 You need this because it's what allows git to do its work.
+
+How is the staging area different from the working directory and the
+repository? What value do you think it offers?
+
+The staging area is where there are files are going to be put into a
+repository go.put they don't really "go" there they just are there, whereas
+the working directory and repository are the places where the actual files and
+old commits go, the staging area is like the road between them. The value this
+adds is to let me pick which particular files to add to a commit.
+
+How can you use the staging area to make sure you have one commit per
+logical change?
+
+I can use git diff and and the staging area to check on what changes have
+been made, and also I can only add the changes to a particular file or set of
+files rather than making a commit of every file on a project.
+
+
+What are some situations when branches would be helpful in keeping your history
+organized? How would branches help?
+
+Up until now, the "versions" we've been making have really only been updates,
+so branches are what allows us to get into some of the real meat and potatoes
+of version control. I could have different branches to work on certain features
+while keeping a master.
