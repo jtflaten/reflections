@@ -1,0 +1,61 @@
+Running things from the command line is cool, if not a bit unnerving.
+It's unnerving because you don't automatically see what you're working
+with the same way that you do with as a gui.
+
+How did viewing a diff between two versions of a file help you see the bug that
+was introduced?
+
+Well, you can compare the differences line by line, and thus it's easier to tell
+if something looks strange or out of place. In this case, it was easy to tell
+that the word "spacr" was likely a typo of the word "space".
+
+How could having easy access to the entire history of a file make you a more
+efficient programmer in the long term?
+
+If a bug is introduced early on but not immediately caught, having a complete
+version-control history will make it possible to get code from before the bug
+was introduced.
+
+What do you think are the pros and cons of manually choosing when to create a
+commit, like you do in Git, vs having versions automatically saved, like Google
+Docs does?
+
+pros:
+  -you don't create a huge number of commits, which would be hard to keep track
+  of, and eventually take up unnecessary space.
+  -you can leave comments, so you know what happened in each version, and thus
+  where to look for differences.
+
+cons:
+  -user error. you may forget to make a commit after a crucial change if you are
+  working for a long period of time.
+  -without automatic saves, if something goes wrong, you may lose all the work
+  you've done past the last commit.
+
+Why do you think some version control systems, like Git, allow saving multiple
+files in one commit, while others, like Google Docs, treat each file separately?
+
+Git is more based in the coding community, where files interact and depend
+upon with each other in order to do the things they are supposed to, so it
+makes sense that it would save multiple files with each commit, where as Docs is
+generally used in a different way, such as collaborative copy writing, where if
+you change one thing it won't necessarily break all of the the documents that
+depend on that one.
+
+How can you use the commands git log and git diff to view the history of files?
+
+git log allows me to view and entire history of the commits made to git for a
+particular repository, while git diff allows me to track specific differences
+between two files.
+
+How might using version control make you more confident to make changes that
+could break something?
+
+If I have version control, I'd be more willing to try things out because I know
+that it will not take very much to fix things if they do break.
+
+Now that you have your workspace set up, what do you want to try using Git for?
+
+I'll be using git for version control of my iOS apps. so even though i set up
+git to use atom as it's primary text editor, I should maybe set up Xcode as the
+default. 
