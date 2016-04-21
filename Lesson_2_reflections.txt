@@ -27,3 +27,41 @@ Up until now, the "versions" we've been making have really only been updates,
 so branches are what allows us to get into some of the real meat and potatoes
 of version control. I could have different branches to work on certain features
 while keeping a master.
+
+How do the diagrams help you visualize the branch structure?
+
+The diagrams show how the branches work visually, in a way that is
+reminiscent of actual branches in a tree. so viewing the lesson with a diagram,
+rather than just seeing a list of commits in a certain branch, is helpful
+to get a more complete understanding of what branches are and how they work.
+
+What is the result of merging two branches together? Why do we represent it in
+the diagram the way we do?
+
+Merging two branches together makes them both into one branch that keeps
+changes based on the the two latest commits of the branches that are to be
+merged and the commit where the the two branches initiated. It also lists the
+commits in chronological order, but if you need to compare a commit to it's
+parent, you can use the git show command. we represented it
+in the diagram the way we do because that's they way that makes the most sense
+visually.
+
+What are the pros and cons of Git’s automatic merging vs. always doing merges
+ manually?
+
+pros of automatic merging:
+  -It's faster
+  -git is pretty smart about how it chooses to do automatic merges
+  -if git runs into a conflict, it will let you know, rather than attempting
+  what it thinks is best and breaking the code
+cons of auto merging:
+  -not the best in all situations
+  -one could run into a situation where git does the merging and it does
+  something wrong and its hard to find record of it.
+
+pros of always doing it manually:
+  -wouldn't be able to blame git if something gets messed up
+cons of manual merge:
+  -potential for user error
+  -time consuming
+  -i wouldn't know how.
