@@ -11,4 +11,19 @@ automatically stay up-to-date with your remote repository?
 
 If Git automatically did periodic updating from the remote repository, you could
 lose everything your worked on up to that point if you hadn't previously pushed
-it into the remote. 
+it into the remote.
+
+Describe the differences between forks, clones, and branches. When would you
+use one instead of another?
+
+A clone is a copy of a repository that is on a local machine. So far, we've only
+dealt with clones in the way that we make a clone from github onto our local
+machine, but it is possible to make a clone of a repository on the same machine.
+A fork is clone, but it is a repository of another's github work into your
+github and it generally tracks the changes you've made since you created the
+fork. You can add collaborators to the fork, though.
+A branch is a part of a repository wherein the commits "branch" off from one
+another. There is almost always a "master" branch, which contains the most
+up-to-date official commit. a common use for branches is to keep your master
+for debugging (if that) and work out/add in new features on a different branch.
+ 
