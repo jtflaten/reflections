@@ -46,4 +46,17 @@ for debugging (if that) and work out/add in new features on a different branch.
  but as i get better with terminal commands, that benefit is losing value. It
  would probably be much harder to find where changes are made and see what
  exactly the changes are. It would also be harder to collaborate with larger
- groups. 
+ groups.
+
+
+When would you want to make changes in a separate branch rather than directly
+in master? What benefits does each approach have?
+
+While making changes directly into the master branch is easier and requires less
+steps, once you have code go "live" you probably don't want to update the master
+every time you're working on any small changes/bug fixes.
+
+ Rather than simply pulling and pushing, you need to pull changes into your
+ local master branch, merge the local master into your branch (different-oil,
+ in our case), then push your branch to the remote before finally merging your
+ branch into master, either locally or on GitHub.
