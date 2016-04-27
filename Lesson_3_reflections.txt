@@ -26,4 +26,24 @@ A branch is a part of a repository wherein the commits "branch" off from one
 another. There is almost always a "master" branch, which contains the most
 up-to-date official commit. a common use for branches is to keep your master
 for debugging (if that) and work out/add in new features on a different branch.
- 
+
+ What is the benefit of having a copy of the last known state of the remote
+ stored locally?
+
+ Having a copy of the last know state of the remote stored locally is
+ beneficial if you are not going to be connecting to the remote for some time,
+ because you'll be able to check changes you make against other changes that
+ had been made up to that point. Even if you are not working on the same part
+ of the code that someone else was working on last, there is potential that
+ conflicts an come up as more people are working on a project and as that
+ project gets bigger.
+
+ How would you collaborate without using Git or GitHub? What would be easier,
+ and what would be harder?
+
+ Without git/github, I'd probably collaborate using email. i guess a way it might
+ be easier to do this is that some UI would be easier than using the terminal,
+ but as i get better with terminal commands, that benefit is losing value. It
+ would probably be much harder to find where changes are made and see what
+ exactly the changes are. It would also be harder to collaborate with larger
+ groups. 
